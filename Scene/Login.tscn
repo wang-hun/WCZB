@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cdgy7w5qg6fp2"]
+[gd_scene load_steps=2 format=3 uid="uid://cdgy7w5qg6fp2"]
+
+[ext_resource type="Texture2D" uid="uid://dcxfcfdc7y3xk" path="res://texture/LoginBG.png" id="1_vhlv8"]
 
 [node name="Login" type="Control"]
 layout_mode = 3
@@ -7,6 +9,20 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Backgrand" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -90.0
+offset_right = 160.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_vhlv8")
+stretch_mode = 4
 
 [node name="LoginRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(420, 500)
@@ -23,11 +39,3 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.235932, 0.0574429, 0.136179, 1)
-
-[node name="Backgrand" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
